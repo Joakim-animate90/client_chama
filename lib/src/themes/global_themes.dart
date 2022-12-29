@@ -2,38 +2,42 @@ import 'package:client_chama/src/themes/colors.dart';
 import 'package:flutter/material.dart';
 
 class GlobalTheme {
-  static ThemeData lightTheme = ThemeData(
+  ThemeData lightTheme = ThemeData(
     primaryColor: kSecondaryColor,
     scaffoldBackgroundColor: kSecondaryColor,
     appBarTheme: AppBarTheme(
       color: kPrimaryColor,
       elevation: 0,
-      iconTheme: const IconThemeData(color: kBlack),
+      iconTheme: const IconThemeData(color: kSecondaryColor),
       toolbarTextStyle: const TextTheme(
         headline6: TextStyle(
-          color: kBlack,
+          color: kSecondaryColor,
           fontSize: 20,
           fontWeight: FontWeight.w600,
+          fontFamily: 'Segoe UI',
         ),
       ).bodyText2,
       titleTextStyle: const TextTheme(
         headline6: TextStyle(
-          color: kBlack,
+          color: kSecondaryColor,
           fontSize: 20,
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w700,
+          fontFamily: 'Segoe UI',
         ),
       ).headline6,
     ),
     textTheme: const TextTheme(
       headline6: TextStyle(
-        color: kBlack,
+        color: kSecondaryColor,
         fontSize: 20,
         fontWeight: FontWeight.w600,
+        fontFamily: 'Segoe UI',
       ),
       bodyText1: TextStyle(
-        color: kBlack,
+        color: kPaleGreen,
         fontSize: 16,
-        fontWeight: FontWeight.w400,
+        fontWeight: FontWeight.bold,
+
       ),
     ),
     colorScheme: ColorScheme.fromSwatch().copyWith(secondary: kBlack),

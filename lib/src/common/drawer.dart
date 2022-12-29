@@ -18,7 +18,9 @@ class CustomDrawer extends StatelessWidget {
           ),
           DrawerListTile(
             title: 'chats',
-            leading: const Icon(Icons.message),
+            leading: const Icon(Icons.message,
+            color: kBlack,
+            ),
             key: null,
             onPress: () {
               //update the state of the app
@@ -26,7 +28,9 @@ class CustomDrawer extends StatelessWidget {
           ),
           DrawerListTile(
             title: 'Create groups',
-            leading: const Icon(Icons.group),
+            leading: const Icon(Icons.group,
+            color: kBlack,
+            ),
             key: null,
             onPress: () {
               //update the state of the app
@@ -35,16 +39,22 @@ class CustomDrawer extends StatelessWidget {
 
           DrawerListTile(
             title: 'Profile',
-            leading: const Icon(Icons.person),
+            leading: const Icon(Icons.person,color: kBlack,),
             key: null,
             onPress: () {
               //update the state of the app
             },
           ),
-
+          const Divider(
+            //It should not reach the end of the screen
+            color: kBlack,
+            thickness: 0.1,
+          ),
           DrawerListTile(
             title: 'Logout',
-            leading: const Icon(Icons.logout),
+            leading: const Icon(Icons.logout,
+            color: kBlack,
+            ),
             key: null,
             onPress: () {
               //update the state of the app
@@ -76,7 +86,7 @@ class DrawerListTile extends StatelessWidget {
       leading: leading,
       title: Text(
         title,
-        style: const TextStyle(color: kSecondaryColor),
+        style: const TextStyle(color: kBlack),
       ),
     );
   }
