@@ -8,6 +8,7 @@ class CustomText extends StatelessWidget {
   final FontWeight? fontWeight;
   final Color? color;
   final VoidCallback? onClicked;
+  final TextDecoration? textDecoration;
 
   const CustomText({
     Key? key,
@@ -15,6 +16,7 @@ class CustomText extends StatelessWidget {
     this.fontSize,
     this.fontWeight,
     this.color,
+    this.textDecoration,
     this.onClicked,
   }) : super(key: key);
 
@@ -27,6 +29,7 @@ class CustomText extends StatelessWidget {
         style: TextStyle(
           fontSize: fontSize,
           fontWeight: fontWeight,
+          decoration: textDecoration,
           color: color,
         ),
       ),

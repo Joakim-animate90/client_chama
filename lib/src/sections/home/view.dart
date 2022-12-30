@@ -27,57 +27,44 @@ class HomeView extends StatelessWidget {
                   width: 200,
                 ),
                 const CustomSizedBox(height: 20.0,),
-                const Text(
-                  'Hello Jane',
-                  style: TextStyle(
-                    color: kSecondaryColor,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Segoe UI',
-                  ),
+                const CustomText(
+                  text: 'Hello Jane',
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                  color: kSecondaryColor,
                 ),
                 const CustomSizedBox(height: 20.0,),
-                const Text(
-                  welcomeMessage,
-                  style : TextStyle(
-                    color: kPaleGreen,
-                    fontSize: 16,
-                    fontFamily: 'Segoe UI',
-                  ),
-                ),
+               const CustomText(text: welcomeMessage,
+                 fontSize: 14,
+                 color: kPaleGreen,
+               ),
                 Padding(
                   padding: const EdgeInsets.all(20),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: const [
-                      Text(
-                        searchGroup,
-                        style: TextStyle(
-                          decoration: TextDecoration.underline,
+                      CustomText(
+                        text: searchGroup,
+                          textDecoration: TextDecoration.underline,
                           color: kPaleGreen,
-                        ),
                       ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text(
-                        '|',
-                        style: TextStyle(
+                      CustomText(
+                        text: '|',
                           fontWeight: FontWeight.bold,
                           fontSize: 16,
                           color: kPaleGreen,
-                        ),
                       ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text(
-                        createGroup,
-                        style: TextStyle(
-                          decoration: TextDecoration.underline,
+                      CustomText(
+                        text: createGroup,
+                          textDecoration: TextDecoration.underline,
                           color: kPaleGreen,
-                        ),
                       ),
                     ],
                   ),
