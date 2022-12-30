@@ -26,9 +26,9 @@ class HomeView extends StatelessWidget {
                   height: 200,
                   width: 200,
                 ),
-                const MySizedBox(),
+                const CustomSizedBox(height: 20.0,),
                 const Text(
-                  'Hello',
+                  'Hello Jane',
                   style: TextStyle(
                     color: kSecondaryColor,
                     fontSize: 25,
@@ -36,9 +36,9 @@ class HomeView extends StatelessWidget {
                     fontFamily: 'Segoe UI',
                   ),
                 ),
-                const MySizedBox(),
+                const CustomSizedBox(height: 20.0,),
                 const Text(
-                  welcome_message,
+                  welcomeMessage,
                   style : TextStyle(
                     color: kPaleGreen,
                     fontSize: 16,
@@ -52,7 +52,7 @@ class HomeView extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: const [
                       Text(
-                        search_group,
+                        searchGroup,
                         style: TextStyle(
                           decoration: TextDecoration.underline,
                           color: kPaleGreen,
@@ -73,7 +73,7 @@ class HomeView extends StatelessWidget {
                         width: 10,
                       ),
                       Text(
-                        create_group,
+                        createGroup,
                         style: TextStyle(
                           decoration: TextDecoration.underline,
                           color: kPaleGreen,

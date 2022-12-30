@@ -1,4 +1,4 @@
-import 'package:client_chama/src/themes/colors.dart';
+import 'package:client_chama/src/utils/colors/colors.dart';
 import 'package:flutter/material.dart';
 
 class GlobalTheme {
@@ -20,15 +20,15 @@ class GlobalTheme {
       titleTextStyle: const TextTheme(
         headline6: TextStyle(
           color: kSecondaryColor,
-          fontSize: 20,
-          fontWeight: FontWeight.w700,
+          fontSize: 15,
+          fontWeight: FontWeight.w400,
           fontFamily: 'Segoe UI',
         ),
       ).headline6,
     ),
     textTheme: const TextTheme(
       headline6: TextStyle(
-        color: kSecondaryColor,
+        color: kBlack,
         fontSize: 20,
         fontWeight: FontWeight.w600,
         fontFamily: 'Segoe UI',
