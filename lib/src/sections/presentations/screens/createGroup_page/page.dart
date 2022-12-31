@@ -1,5 +1,5 @@
-import 'package:client_chama/src/sections/home/screens/create_page/views/page.dart';
-import 'package:client_chama/src/sections/home/screens/home_page/views/page.dart';
+import 'package:client_chama/src/sections/presentations/screens/createGroup_page/views/page.dart';
+import 'package:client_chama/src/sections/presentations/screens/home_page/views/page.dart';
 import 'package:client_chama/src/utils/responsive/responsive_layout.dart';
 import 'package:flutter/material.dart';
 class CreateGroupRenderPage extends StatelessWidget {
