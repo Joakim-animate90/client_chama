@@ -1,9 +1,9 @@
 import 'package:client_chama/src/sections/business/home/home_bloc.dart';
-import 'package:client_chama/src/sections/home/page.dart';
+import 'package:client_chama/src/sections/home/screens/create_page/page.dart';
+import 'package:client_chama/src/sections/home/screens/home_page/page.dart';
 import 'package:client_chama/src/utils/themes/global_themes.dart';
 import 'package:flow_builder/flow_builder.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 
 part 'routing.dart';

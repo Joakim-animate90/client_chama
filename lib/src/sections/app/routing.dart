@@ -5,9 +5,14 @@ List<Page> onGenerateHomeViewPages(
   if (state is HomeStateInitial) {
     return [
       ...pages,
-      HomePage.page(),
+      HomeEngineRenderPage.page(),
+    ];
+  }else if (state is HomeStateCreateGroup) {
+    return [
+      ...pages,
+      CreateGroupRenderPage.page(),
     ];
   }else {
     return pages;
-   }
+  }
 }

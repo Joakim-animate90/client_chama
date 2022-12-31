@@ -10,7 +10,7 @@ class HomeView extends StatelessWidget {
         return Scaffold(
           backgroundColor: kDarkGreen,
           appBar: AppBar(
-            title: const Text('My Chats'),
+            title: const CustomText(text: myChats),
           ),
           drawer: const CustomDrawer(),
           //container with image top and bottom text at center
@@ -24,47 +24,58 @@ class HomeView extends StatelessWidget {
                 const Image(
                   image: AssetImage('assets/images/happy_face.png'),
                   height: 200,
-                  width: 200,
+                  width: 300,
                 ),
-                const CustomSizedBox(height: 20.0,),
+                const CustomSizedBox(
+                  height: 10.0,
+                ),
                 const CustomText(
                   text: 'Hello Jane',
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
                   color: kSecondaryColor,
                 ),
-                const CustomSizedBox(height: 20.0,),
-               const CustomText(text: welcomeMessage,
-                 fontSize: 14,
-                 color: kPaleGreen,
-               ),
+                const CustomSizedBox(
+                  height: 20.0,
+                ),
+                const CustomText(
+                  text: welcomeMessage,
+                  fontSize: 14,
+                  color: kPaleGreen,
+                ),
                 Padding(
                   padding: const EdgeInsets.all(20),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: const [
-                      CustomText(
+                    children: [
+                     CustomText(
                         text: searchGroup,
-                          textDecoration: TextDecoration.underline,
-                          color: kPaleGreen,
+                        textDecoration: TextDecoration.underline,
+                        color: kPaleGreen,
+                        onClicked: (){
+                          context.read<HomeBloc>().add(const HomeEventSearchGroup());
+                        },
                       ),
-                      SizedBox(
-                        width: 10,
+                     const SizedBox(
+                        width: 20.0,
                       ),
-                      CustomText(
+                      const CustomText(
                         text: '|',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                          color: kPaleGreen,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                        color: kPaleGreen,
                       ),
-                      SizedBox(
+                     const SizedBox(
                         width: 10,
                       ),
                       CustomText(
                         text: createGroup,
-                          textDecoration: TextDecoration.underline,
-                          color: kPaleGreen,
+                        textDecoration: TextDecoration.underline,
+                        color: kPaleGreen,
+                        onClicked: (){
+                          context.read<HomeBloc>().add(const HomeEventCreateGroup());
+                      },
                       ),
                     ],
                   ),

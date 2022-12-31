@@ -3,6 +3,35 @@ import 'package:flutter/material.dart';
 
 class GlobalTheme {
   ThemeData lightTheme = ThemeData(
+    inputDecorationTheme: const InputDecorationTheme(
+      labelStyle: TextStyle(color: kBlack),
+      hintStyle: TextStyle(color: kGrey, fontFamily: 'Segoe UI'),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: kBlack),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: kPrimaryColor),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
+      constraints:  BoxConstraints(
+        maxHeight: 40.0,
+        maxWidth: 300.0,
+      ),
+
+
+
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: kPrimaryColor,
+        foregroundColor: kSecondaryColor,
+        minimumSize: const Size(300.0, 50.0),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(5),
+        ),
+      ),
+    ),
     primaryColor: kSecondaryColor,
     scaffoldBackgroundColor: kSecondaryColor,
     appBarTheme: AppBarTheme(

@@ -10,6 +10,7 @@ class CustomText extends StatelessWidget {
   final VoidCallback? onClicked;
   final TextDecoration? textDecoration;
 
+
   const CustomText({
     Key? key,
     required this.text,
@@ -31,6 +32,7 @@ class CustomText extends StatelessWidget {
           fontWeight: fontWeight,
           decoration: textDecoration,
           color: color,
+          fontFamily: 'Segoe UI',
         ),
       ),
     );

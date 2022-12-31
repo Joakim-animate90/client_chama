@@ -40,6 +40,7 @@ dependencies:
   equatable: ^2.0.5
   flow_builder: ^0.0.9
   provider: ^6.0.5
+  rflutter_alert: ^2.0.4
 
 dev_dependencies:
   flutter_test:
@@ -80,8 +81,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
+  fonts:
+    - family: Segoe UI
+      fonts:
+        - asset: assets/fonts/Segoe/SEGOEUI.TTF
+          weight: 400
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
